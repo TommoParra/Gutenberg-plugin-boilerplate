@@ -4,7 +4,7 @@ import './style.scss';
 import Edit from './edit';
 import Save from './save';
 
-registerBlockType('cardcorp/did-you-know', {
+registerBlockType('custom-block/hello-world', {
   edit: Edit,
   save: Save,
 });

@@ -1,0 +1,18 @@
+{
+	"apiVersion": 2,
+	"name": "custom-block/hello-world",
+	"title": "Hello World",
+	"category": "text",
+	"icon": "smiley",
+	"description": "A minimal Hello World block.",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
