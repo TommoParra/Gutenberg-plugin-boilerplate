@@ -1,16 +1,27 @@
 .did-you-know {
-	background: #f8f9ff;
-	border-radius: 1rem;
-	padding: 1.5rem;
-	font-family: 'Poppins', sans-serif;
+    display: grid;
+    row-gap: 8px;
+    background: #F7F9FF;
+    border-radius: 26px;
+    padding: 24px;
+    font-family: 'Poppins', sans-serif;
+	font-size: 1.25rem;
 
-	&__title {
-		margin: 0 0 0.5rem;
-		font-weight: 600;
+    &__title {
+		display: flex;
+			gap: 5px;
+		&-text {
+			font-weight: 600;
+			color: #0B0B10;
+		}
+    }
+
+	&__emoji {
+		line-height: 1.8rem;
 	}
 
-	&__content {
-		margin: 0;
-		font-size: 1rem;
-	}
+    p.did-you-know__content {
+		font-weight: 400;
+		color: #0B0B10;
+    }
 }
