@@ -49,7 +49,8 @@ More on this: https://developer.wordpress.org/block-editor/
 
 Duplicate the `hello-world` folder and rename it (e.g., `my-block`).
 
-### 2. Register the new block in `custom-gutenberg-blocks.php`
+### 2. Register the new block in `custom-gutenberg-blocks.php`. 
+Using `my-block` as an example:
 ```php
 <?php
 /**
@@ -63,7 +64,8 @@ add_action( 'init', function () {
 } );
 ```
 
-### 3. Update the block.json metadata
+### 3. Update the block.json metadata. 
+Specially name, title and description. Change the icon and the category too, to increase usability. 
 ```json
 {
   "apiVersion": 2,
@@ -86,12 +88,14 @@ add_action( 'init', function () {
 ```
 
 ### 4. Update src/index.js
+Rename the block here. (e.g., `my-block`).
 ```js
 registerBlockType('custom-block/my-block', {
   edit: Edit,
   save: Save,
 });
 ```
+
 ### 5. Edit the block styles & markup
 - src/edit.js + src/editor.scss: controls editor appearance
 - src/save.js + src/style.scss: controls frontend output
